@@ -8,12 +8,15 @@ export default function Home() {
   // HTMLのようなマークアップを書くことができる
   // JavaScriptを書いたり、参照する際には{}で囲む
   return (
-    <div>
-      {/* CSS moduleをクラスに読み込む */}
-      <h1 className={styles.title}>テクノロジーの力で世界を変える</h1>
-      <p className={styles.description}>
-        私たちは市場をリードしているグローバルテクニックカンパニーです。
-      </p>
-    </div>
+    <section className={styles.top}>
+      <div>
+        {/* CSS moduleをクラスに読み込む */}
+        <h1 className={styles.title}>テクノロジーの力で世界を変える</h1>
+        <p className={styles.description}>
+          私たちは市場をリードしているグローバルテクニックカンパニーです。
+        </p>
+      </div>
+      <img className={styles.bgimg} src="/img-mv.jpg" alt="" />
+    </section>
   );
 }
